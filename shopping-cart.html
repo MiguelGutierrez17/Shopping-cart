@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="/css/style.less" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Posters</h1>
+        </div>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <div style="position: relative; margin-right: 5vh;">
+                        <a id="long"></a>
+                        <img src="./img/shopping-cart.png" id="img-cart">
+                    </div>
+
+                    <div id="cart">
+                        <table id="cart-list">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a id="vaciar-cart">Vaciar carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div id="banner">
+        <img src="./img/bgbannerwide.jpg" alt="PosterBanner">
+        <div id="form">
+            <h1>Lo mejor del septimo arte a la decoración de tu casa.</h1>
+            <h2>Si quieres un articulo personalizado no dudes en llamarnos.</h2>
+        </div>
+    </div>
+    <div>
+        <h1 class="titulo">Artículos en venta</h1>
+        <div class="container" id="poster-list">
+            <div id="poster">
+                <img id="imgposter" src="./img/pulpfiction.png">
+                <label id="title">Pulp Fiction</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="1">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/dune.png">
+                <label id="title">DUNE</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="2">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/thebatman.png">
+                <label id="title">The Batman</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="3">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/scarface.png">
+                <label id="title">Scarface</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="4">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/zootopia.png">
+                <label id="title">Zootopia</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="5">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/nocturnalanimals.png">
+                <label id="title">Nocturnal animals</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="6">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/portraitofaladyonfire.png">
+                <label id="title">Portrait of a lady on fire</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="7">Agregar al carrito</button>
+            </div>
+            <div id="poster">
+                <img id="imgposter" src="./img/thegreenknight.png">
+                <label id="title">The green knight</label>
+                <label id="price">$75000 COP</label>
+                <button class="add-cart" data-id="8">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="">Ideas de decoración</a>
+            <a href="">Técnicas de impresión en nuestros posters</a>
+            <a href="">Personaliza tu poster</a>
+            <a href="">Compra por concepto</a>
+            <a href="">¿Buscas posters compuestos?</a>
+        </div>
+        <div>
+            <a href="">¿Quiénes somos?</a>
+            <a href="">Trabaja con nosotros</a>
+            <a href="">Contacto</a>
+        </div>
+        <div><img src="./img/frame.png" alt="FrameLogo"></div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+</body>
+
+</html>
