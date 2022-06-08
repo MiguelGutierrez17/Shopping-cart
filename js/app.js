@@ -9,9 +9,14 @@ cargarEvents();
 
 function cargarEvents() {
     listaPosters.addEventListener('click', agregarPoster);
-    cart.addEventListener('click', eliminarPoster)
+    cart.addEventListener('click', eliminarPoster);
+    document.addEventListener('DOMContentLoaded', () => {
+        articulosCart = JSON.parse(localStorage.getItem('Cart')) || [];
+        generarCarrito();
+    });
     vaciarCarritoBtn.addEventListener('click', () => {
         articulosCart = [];
+        localStorage.removeItem('Cart');
         limpiarCarroNuevoingreso();
     })
     comprobarLong();
@@ -91,6 +96,12 @@ function generarCarrito() {
         contenedorCart.appendChild(row);
     })
     comprobarLong();
+
+    sincronizarStorage()
+}
+
+function sincronizarStorage() {
+    localStorage.setItem('Cart', JSON.stringify(articulosCart));
 }
 
 function limpiarCarroNuevoingreso() {
